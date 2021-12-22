@@ -15,4 +15,8 @@ CREATE TABLE [dbo].[Students]
 
 SET IDENTITY_INSERT [dbo].[Students] ON
 INSERT INTO [dbo].[Students] ([Id], [StudentName], [IndexNumber], [PointsESPB], [StudyYear], [AverageMark], [IsBudget]) VALUES (1, N'Aleksandar', N'214-2018', 105, 3, CAST(7.88 AS Decimal(18, 2)), 0)
+INSERT INTO [dbo].[Students] ([Id], [StudentName], [IndexNumber], [PointsESPB], [StudyYear], [AverageMark], [IsBudget]) VALUES (2, N'Ana', N'20-2020', 55, 2, CAST(8.00 AS Decimal(18, 2)), 0)
+INSERT INTO [dbo].[Students] ([Id], [StudentName], [IndexNumber], [PointsESPB], [StudyYear], [AverageMark], [IsBudget]) VALUES (3, N'Mile', N'11-2021', 54, 2, CAST(7.80 AS Decimal(18, 2)), 1)
+INSERT INTO [dbo].[Students] ([Id], [StudentName], [IndexNumber], [PointsESPB], [StudyYear], [AverageMark], [IsBudget]) VALUES (4, N'Mile ', N'33-2020', 38, 2, CAST(6.90 AS Decimal(18, 2)), 0)
+INSERT INTO [dbo].[Students] ([Id], [StudentName], [IndexNumber], [PointsESPB], [StudyYear], [AverageMark], [IsBudget]) VALUES (5, N'Lela', N'50-2019', 105, 3, CAST(7.40 AS Decimal(18, 2)), 0)
 SET IDENTITY_INSERT [dbo].[Students] OFF

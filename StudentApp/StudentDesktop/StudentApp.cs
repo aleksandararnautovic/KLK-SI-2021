@@ -40,10 +40,10 @@ namespace StudentDesktop
             {
                 Name = textBoxName.Text,
                 IndexNumber = textBoxIndexNumber.Text,
-                PointsESPB = Convert.ToInt32(textBoxAverageMark.Text),
+                PointsESPB = Convert.ToInt32(textBoxPointsESPB.Text),
                 StudyYear = Convert.ToInt32(textBoxStudyYear.Text),
                 AverageMark = Convert.ToDecimal(textBoxAverageMark.Text),
-                IsBudget =Convert .ToBoolean( radioButtonIsBudget.Text ),
+                IsBudget = radioButtonIsBudget .Checked,
 
             };
 
@@ -56,7 +56,7 @@ namespace StudentDesktop
             textBoxPointsESPB.Text = string.Empty;
             textBoxStudyYear.Text = string.Empty;
             textBoxAverageMark.Text = string.Empty;
-            radioButtonIsBudget.Checked = true;
+            radioButtonIsBudget.Checked  = false;
             
         }
     }
