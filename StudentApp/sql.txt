@@ -1,0 +1,18 @@
+// Code
+
+CREATE TABLE [dbo].[Students]
+(
+	[Id] INT NOT NULL PRIMARY KEY identity, 
+    [StudentName] NVARCHAR(50) NOT NULL, 
+    [IndexNumber] NVARCHAR(10) NOT NULL, 
+    [PointsESPB] INT NOT NULL, 
+    [StudyYear] INT NOT NULL, 
+    [AverageMark] DECIMAL(18, 2) NOT NULL, 
+    [IsBudget] BIT NOT NULL
+)
+
+// Script
+
+SET IDENTITY_INSERT [dbo].[Students] ON
+INSERT INTO [dbo].[Students] ([Id], [StudentName], [IndexNumber], [PointsESPB], [StudyYear], [AverageMark], [IsBudget]) VALUES (1, N'Aleksandar', N'214-2018', 105, 3, CAST(7.88 AS Decimal(18, 2)), 0)
+SET IDENTITY_INSERT [dbo].[Students] OFF
